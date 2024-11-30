@@ -1,0 +1,132 @@
+/* Editor view styling, for a nicer visual expereience */
+.acf-fields > .acf-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.kpi {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .kpi__content {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+  }
+  
+  .kpi__main {
+    display: flex;
+    background: #fff;
+    font: 35px 'Bitter',serif;
+    font-weight: 700;
+    padding: 70px 7% 70px 40px;
+    max-width: 45%;
+    flex-basis: 45%;
+    line-height: 1.2;
+  /*   color: #201f22; */
+    align-items: center;
+  }
+  
+  .kpi__additional {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 0;
+    color: #fff;
+    padding-left: 45px;
+    align-items: flex-start;
+    flex-basis: 55%;
+    max-width: 55%;
+  }
+    .kpi__number {
+      display: flex;
+      position: relative;
+      align-items: flex-start;
+    }
+    .kpi__symbol--before {
+      font-size: 60px;
+      font-weight: 500;
+      margin-right: 10px;
+      align-self: flex-start;
+    }
+    .number {
+      font-size: 120px;
+      height: 95px;
+      margin-left: -5px;
+      line-height: .7;
+      font-weight: 700;
+      letter-spacing: -.01em;
+      }
+    .kpi__symbol {
+      display: block;
+      margin-left: 10px;
+      font-size: 60px;
+      order: 5;
+      font-weight: 500;
+      line-height: 1;
+    }
+  .kpi__symbol--separator {
+    font-size: 120px;
+    height: 155px;
+    line-height: 90px;
+    font-weight: 700;
+    margin: 0 10px;
+  }
+  .kpi__symbol {
+    display: block;
+    order: 5;
+  }
+  
+   .kpi__right {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     margin-left: 0;
+     max-width: 620px;
+     padding-right: 20px;
+    }
+    .kpi__info {
+      margin-top: auto;
+    }
+  .kpi__title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .kpi__description {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .kpi__background {
+    text-align: right;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .image-holder {
+      position: relative;
+      display: block;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+  }
+  
+  .image-holder.background {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
