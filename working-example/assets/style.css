@@ -249,6 +249,7 @@ button {
   font-size: 25px;
   font-weight: 700;
   max-width: 270px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
