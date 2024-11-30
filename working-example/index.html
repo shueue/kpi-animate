@@ -6,10 +6,15 @@
 </head>
 
 <body>
+<header>
+    <h1>KPI Number Animation Showcase</h1>
+</header>
+
+<main>
     <div class="bttn-place">
         <button id="animateButton">Animate</button>
     </div>
-        
+    
     <div class="kpi js-kpis">
         <div class="kpi__content">
             <div class="kpi__main" tabindex="0">This could be a KPI for a fundraiser</div>
@@ -23,7 +28,7 @@
                     <span class="number js-kpi-number" aria-live="off" data-number="000">000</span>
                     <span class="kpi__symbol">+</span>
                 </div>
-                    
+                
                 <div class="kpi__right">
                     <div class="kpi__info">
                         <div class="kpi__title">Raised So Far</div>
@@ -32,25 +37,75 @@
                 </div>
             </div>
         </div>
-            
+        
         <div class="kpi__background">
             <div class="image-holder background">
                 <img
                 class="simple-parallax"
-                src="https://as2.ftcdn.net/v2/jpg/03/09/01/95/1000_F_309019530_Yghycl5GAjp7zlQMAi4CuC8W6usqDDuc.jpg"
+                src="assets/images/kpi-bg.jpg"
                 alt="background">
                 <i data-parallax-shadow="data-parallax-shadow"></i>
             </div>
         </div>
     </div>
-        
+    
     <div class="spacer">
-        <hr></div>
-            
-        <!-- KPIS Start -->
-        <div class="bttn-place">
-            <button id="animateButton">Animate</button>
+        <hr>
     </div>
-            
+    
+    <!-- KPIS Start -->
+    <div class="bttn-place">
+        <button id="animateButton">Animate</button>
+    </div>
+
+    <div class="kpis-module md-white-bg" style="background-image:url(assets/images/kpis-bg.jpg);">
+        <div class="kpis-bg" data-parallax-scroll data-speed="0.6" style="background-image:url(assets/images/kpis-bg.jpg);"></div>
+        <div class="page-frame">
+            <div class="swiper-container quote-slider" data-count="2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="kpis__quote kpis__quote_symbol">
+                            <blockquote>This is a quote</blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-navigation custom-nav">
+                    <div class="swiper-button-prev js-qs-btn-prev">
+                        <svg width="14" height="14" fill="#fff">
+                            <use xlink:href="#icon_arrow_purple"></use>
+                        </svg>
+                    </div>
+                    <div class="swiper-pagination js-qs-pagination"></div>
+                    <div class="swiper-button-next js-qs-btn-next">
+                        <svg width="14" height="14" fill="#fff">
+                            <use xlink:href="#icon_arrow_purple"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="kpis js-kpis">
+                <div class="kpis__item">
+                    <div class="kpis__top js-kpi-group" tabindex="0">
+                        <span class="kpis__number js-kpi-number" aria-live="off" data-number="50">50</span>
+                        <span class="kpis__symbol js-kpis-symbol">%</span>
+                    </div>
+                    <div class="kpis__title">is half</div>
+                </div>
+    
+                <div class="kpis__item">
+                    <div class="kpis__top js-kpi-group" tabindex="0">
+                        <span class="kpis__symbol js-kpis-symbol--before">$</span>
+                        <span class="kpis__number js-kpi-number" aria-live="off" data-number="9">9</span>
+                        <span class="kpis__seperator">,</span>
+                        <span class="kpis__number js-kpi-number" aria-live="off" data-number="000">000</span>
+                    </div>
+                    <div class="kpis__title">is how much i want</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</main>
 </body>
 </html>

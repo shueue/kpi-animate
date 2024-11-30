@@ -1,18 +1,31 @@
 /*/////// Example Setup Styling //////*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   background-color: lightgrey;
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
 }
+header {
+  padding: 30px 15px;
+  background-color: white;
+}
+header > * {
+  margin: 0 auto;
+  max-width: 1280px;
+  font-family: 'Bitter', serif;
+}
+main {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
 .bttn-place {
   padding: 25px 0;
 }
-.bttn-place button {
+button {
   padding: 10px 30px;
   font-size: 18px;
   text-transform: uppercase;
@@ -51,7 +64,6 @@ body {
   max-width: 45%;
   flex-basis: 45%;
   line-height: 1.2;
-/*   color: #201f22; */
   align-items: center;
 }
 
@@ -67,33 +79,38 @@ body {
   flex-basis: 55%;
   max-width: 55%;
 }
-  .kpi__number {
-    display: flex;
-    position: relative;
-    align-items: flex-start;
-  }
-  .kpi__symbol--before {
-    font-size: 60px;
-    font-weight: 500;
-    margin-right: 10px;
-    align-self: flex-start;
-  }
-  .number {
-    font-size: 120px;
-    height: 95px;
-    margin-left: -5px;
-    line-height: .7;
-    font-weight: 700;
-    letter-spacing: -.01em;
-    }
-  .kpi__symbol {
-    display: block;
-    margin-left: 10px;
-    font-size: 60px;
-    order: 5;
-    font-weight: 500;
-    line-height: 1;
-  }
+
+.kpi__number {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+
+.kpi__symbol--before {
+  font-size: 60px;
+  font-weight: 500;
+  margin-right: 10px;
+  align-self: flex-start;
+}
+
+.number {
+  font-size: 120px;
+  height: 95px;
+  margin-left: -5px;
+  line-height: .7;
+  font-weight: 700;
+  letter-spacing: -.01em;
+}
+
+.kpi__symbol {
+  display: block;
+  margin-left: 10px;
+  font-size: 60px;
+  order: 5;
+  font-weight: 500;
+  line-height: 1;
+}
+
 .kpi__symbol--separator {
   font: 120px 'Bitter', sarif;
   height: 155px;
@@ -101,27 +118,31 @@ body {
   font-weight: 700;
   margin: 0 10px;
 }
+
 .kpi__symbol {
   display: block;
   order: 5;
 }
 
- .kpi__right {
-   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   margin-left: 0;
-   max-width: 620px;
-   padding-right: 20px;
-  }
-  .kpi__info {
-    margin-top: auto;
-  }
+.kpi__right {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 0;
+  max-width: 620px;
+  padding-right: 20px;
+}
+
+.kpi__info {
+  margin-top: auto;
+}
+
 .kpi__title {
   font-size: 25px;
   font-weight: 700;
   margin-bottom: 5px;
 }
+
 .kpi__description {
   font-size: 18px;
   margin: 0;
@@ -137,17 +158,97 @@ body {
 }
 
 .image-holder {
-    position: relative;
-    display: block;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  position: relative;
+  display: block;
+  width: 100%;
+  max-height: 350px;
+}
+  
+.simple-parallax {
+  width: 80%;
 }
 
-.image-holder.background {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/* KPIS STYLING */
+
+.kpis-module {
+  color: #fff;
+  background-color: #330072;
+  padding: 90px 0;
+  position: relative;
+}
+
+.page-frame {
+  max-width: 1480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 40px;
+  width: 100%;
+}
+
+.swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.swiper-slide, .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  margin-bottom: 30px;
+}
+.kpis__quote {
+  font: 700 40px/50px 'Bitter',Serif;
+  color: #fff;
+  text-align: center;
+  max-width: 950px;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.kpis__quote_symbol::before {
+  content: '\201C';
+  font: 94px 'Poppins', sans-sarif;
+  display: block;
+  height: 70px;
+  width: 70px;
+  margin: 0 auto 15px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  line-height: 135px;
+  background-color: #330072;
+  pointer-events: none;
+}
+
+.kpis {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+}
+
+.kpis__number {
+  font: 700 120px 'Bitter',Serif;
+}
+.kpis__symbol {
+  font: 50px 'Bitter',Serif;
+  margin-top: 5px;
+}
+.kpis__seperator {
+  font: 500 50px 'Bitter',Serif;
+  margin-top: 50px;
+}
+.kpis__title {
+  font-size: 25px;
+  font-weight: 700;
+  max-width: 270px;
+  margin-left: auto;
+  margin-right: auto;
 }

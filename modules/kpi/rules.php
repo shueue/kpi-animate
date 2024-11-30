@@ -89,7 +89,6 @@ $module = array( '5bbaf629df26e' => array(
                 'equal'     => '=',
                 'plus'      => '+',
             ),
-            'placeholder'       => 'Select an option',
             'required'          => 0,
             'conditional_logic' => 0,
             'wrapper'           => array(
@@ -97,8 +96,11 @@ $module = array( '5bbaf629df26e' => array(
                 'class' => '',
                 'id'    => '',
             ),
-            'maxlength'         => 1,
+            'placeholder'       => 'Select an option',
+            'default_value'     => '',
             'return_format'     => 'label',
+            'maxlength'         => 1,
+            'allow_null'        => 1,
             'multiple'          => 0,
         ),
         array(

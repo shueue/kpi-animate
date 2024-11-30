@@ -38,7 +38,6 @@ function kpis( $post_id = 0 ) {
     ?>
 
     <div class="kpis-module <?php echo $classes; ?>"<?php echo $anchor_tag . $background; ?>>
-        <div class="kpis-bg" data-parallax-scroll data-speed="0.6" <?php echo $background; ?>></div>
         <div class="page-frame">
             <?php if ( ! empty( $quote_text ) ) : ?>
                 <div class="swiper-container quote-slider" data-count="2">
