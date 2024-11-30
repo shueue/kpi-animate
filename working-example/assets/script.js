@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function kpiAnimate() {
-  document.querySelectorAll( '.js-kpis' ).forEach( ( js_kpi ) => {
+  document.querySelectorAll( '.js-kpis, .kpis-module' ).forEach( ( js_kpi ) => {
     let bttnLocation = js_kpi.previousElementSibling;
     let animateBttn = bttnLocation.querySelector('#animateButton');
     
