@@ -98,7 +98,7 @@ $module = array( '5bbaf629df26e' => array(
                 'id'    => '',
             ),
             'maxlength'         => 1,
-            'return_format'     => 'value',
+            'return_format'     => 'label',
             'multiple'          => 0,
         ),
         array(
