@@ -37,6 +37,11 @@ button {
   border: .5px dashed black;
 }
 
+@media screen and (max-width: 767px) {
+  main {
+    padding: 0 15px;
+  }
+}
 
 /* KPI Stlying */
 .kpi {
@@ -113,7 +118,7 @@ button {
 
 .kpi__symbol--separator {
   font: 120px 'Bitter', sarif;
-  height: 155px;
+  height: 130px;
   line-height: 90px;
   font-weight: 700;
   margin: 0 10px;
@@ -167,6 +172,53 @@ button {
 .simple-parallax {
   width: 80%;
 }
+
+@media screen and (max-width: 767px) {
+  .kpi__content {
+    position: relative;
+    flex-direction: column;
+    padding: 36px 0 22px;
+  }
+  .kpi__main {
+    max-width: 100%;
+    width: auto;
+    margin: 0 20px 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+  }
+  .kpi__additional {
+    padding: 0 20px;
+    align-items: center;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .kpi__background {
+    position: absolute;
+    top: 100px;
+  }
+  .simple-parallax {
+    width: 100%;
+  }
+  .kpi__right {
+    text-align: center;
+    padding-right: 0;
+  }
+  .kpi__number .number {
+    font-size: 60px;
+    height: 50px;
+  }
+  .kpi__symbol, .kpi__symbol--before, .kpi__symbol--separator {
+    font-size: 30px;
+    position: static;
+    margin-left: 7px;
+  }
+  .kpi__symbol--separator {
+    height: auto;
+    line-height: 50px;
+  }
+}
+
 
 /* KPIS STYLING */
 
@@ -251,6 +303,11 @@ button {
   z-index: 1;
 }
 
+.kpis__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
 .kpis__number {
   font: 700 120px 'Bitter',Serif;
 }
@@ -264,9 +321,27 @@ button {
 }
 .kpis__title {
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 400;
   max-width: 270px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .page-frame {
+    padding: 0;
+  }
+  .kpis {
+    display: block;
+  }
+  .kpis__number {
+    font-size: 60px;
+  }
+  .kpis__seperator {
+    margin-top: 5px;
+  }
+  .kpis__item:not(:last-child) {
+    margin-bottom: 25px;
+  }
 }
