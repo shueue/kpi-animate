@@ -3,7 +3,7 @@ WordPress project showcasing custom development with HTML, CSS, PHP, and JavaScr
 
 ## Directory Structure
 - **assets/**: Contains global styles and scripts for the KPI feature.
-- **modules/**: Includes PHP logic and views for rendering KPIs within a WordPress environment.
+- **modules/**: Includes PHP logic and templates for rendering KPI modules within a WordPress environment.
   - `kpi/`: Handles the singular KPI logic and display.
   - `kpis/`: Manages KPI variation with multiple KPIs in the same module.
 - **working-example/**: A standalone demo showing the feature in action without requiring WordPress.
