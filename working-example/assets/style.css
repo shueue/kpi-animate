@@ -10,7 +10,7 @@ body {
 }
 header {
   padding: 30px 15px;
-  background-color: white;
+  background-color: #fff;
 }
 header > * {
   margin: 0 auto;
@@ -73,7 +73,7 @@ button {
   align-items: flex-start;
   justify-content: center;
   padding-bottom: 0;
-  color: black;
+  color: #fff;
   padding-left: 45px;
   align-items: flex-start;
   flex-basis: 55%;
