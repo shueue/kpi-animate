@@ -13,7 +13,6 @@ function kpiAnimate() {
     let finished   = false;
     const duration = 2500;
     
-    // This combines all the separate span elements, which are originally read individually by screen readers, into a single aria-label that will be read out as a whole. Ex: instead of reading "$9,000" as "Dollar sign. Nine. Comma. Zero zero zero," it will now read "Nine thousand dollars."
     function constructLabel( group ) {
                 let numbers         = Array.from( group.querySelectorAll( '.js-kpi-number' ) );
                 let symbolBefore    = group.querySelector( '.kpi__symbol--before, .js-kpis-symbol--before' );
