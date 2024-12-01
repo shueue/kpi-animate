@@ -34,7 +34,7 @@ button {
   padding: 100px 0;
 }
 .spacer > hr {
-  border: 2px dashed red;
+  border: .5px dashed black;
 }
 
 
