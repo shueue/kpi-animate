@@ -50,7 +50,7 @@ Several challenges arose during this project:
 
 
 ## Outcome
-The KPI modules are now fully accessible, allowing screen readers to deliver a clear, user-friendly output (e.g., "ninety thousand dollars"). The keyboard navigation is seamless, and content managers report reduced confusion when editing the module. This success showcases my ability to troubleshoot and optimize existing code for accessibility and performance.
+The KPI modules are now fully accessible, allowing screen readers to deliver a clear, user-friendly output and smooth keyboard navigation. The content manager appreciated the updates and finds the module easier to use. This project is a sucess and demonstrates my ability to optimize existing code for accessibility and performance.
 
 
 ## Editor-Side View of ACF Options
